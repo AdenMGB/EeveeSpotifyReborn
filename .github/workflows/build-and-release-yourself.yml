@@ -92,7 +92,7 @@ jobs:
             -s - -d --level Optimal
 
       - name: Create Patched Package
-        run: ipapatch --help
+        run: ipapatch -input EeveeSpotify.ipa -output EeveeSpotify-patched.ipa
    
       - name: Upload to GitHub Releases
         uses: softprops/action-gh-release@v2.0.1
